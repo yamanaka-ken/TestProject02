@@ -1,8 +1,8 @@
 import streamlit as st
 
-def render(go):
-    st.title("ページ3")
-    st.write("これはページ3です。")
 
-    if st.button("ホームへ戻る"):
-        go("page1")
+def show_page2(move):
+    st.title("Page2")
+
+    if st.button("Page1へ戻る"):
+        move("page1")
