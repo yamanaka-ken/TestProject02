@@ -2,7 +2,10 @@ import streamlit as st
 
 
 def show_page2(move):
-    st.title("Page2")
+    st.title("車種選択")
 
-    if st.button("Page1へ戻る"):
+    if st.button("ログイン画面へ戻る"):
         move("page1")
+    
+    if st.button("車種決定"):
+        move("page4")
