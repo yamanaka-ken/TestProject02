@@ -1,4 +1,14 @@
 import streamlit as st
 
-st.title("ページ 1")
-st.write("これはページ1の内容です。")
+def render(go):
+    st.title("ホーム")
+    st.write("ここはホームページです。")
+
+    if st.button("ページ2へ"):
+        go("page2")
+
+    if st.button("ページ3へ"):
+        go("page3")
+
+    if st.button("ページ4へ"):
+        go("page4")
